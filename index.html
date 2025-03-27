@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quest Formulário Com Validação</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <section class="mensagem">
+                <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de
+                    24h.</p>
+            </section>
+            <section class="formulario-container">
+
+                <form>
+
+                    <input type="text" id="nome-completo" placeholder="Nome Completo*" class="input-text" required>
+                    <span class="msg-error">*campo obrigatório</span>
+                    <input type="email" id="email-usuario" placeholder="E-mail*" class="input-text" required>
+                    <span class="msg-error">*campo obrigatório</span>
+                    <input type="text" id="telefone" placeholder="Telefone*" class="input-text" required>
+                    <span class="msg-error">*campo obrigatório</span>
+                    <textarea id="mensagem" placeholder="Mensagem*" class="input-text message" required></textarea>
+                    <span class="msg-error">*campo obrigatório</span>
+                    <p>*campos obrigatórios</p>
+                    <br>
+                    
+                    <button id="btn" type="submit" class="btn-enviar" >Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <script src="/src/js/formulario.js"></script>
+
+</body>
+
+</html>
