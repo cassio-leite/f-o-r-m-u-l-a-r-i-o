@@ -1,5 +1,5 @@
 const inputText = document.querySelectorAll(".input-text");
-const botaoEnviar = document.getElementById("btn")
+const botaoEnviar = document.getElementById("btn");
 const campoObrigatorio = document.querySelectorAll(".msg-error");
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\. [a-zA-Z]{2,}$/;
 
@@ -18,6 +18,5 @@ inputText.forEach((input, index) => {
             input.classList.add('valid')
             campoObrigatorio[index].classList.remove('required')
         }
-
     });
 });
